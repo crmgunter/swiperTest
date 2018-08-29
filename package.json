@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/crmgunter/swiperTest/issues"
   },
-  "homepage": "https://github.com/crmgunter/swiperTest#readme"
+  "homepage": "https://github.com/crmgunter/swiperTest#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.10"
+  }
 }
