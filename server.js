@@ -3,6 +3,8 @@ require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const ideasController = require('./controllers/ideaController')
+
 
 const app = express()
 
@@ -23,6 +25,7 @@ connection.on('error', (err) => {
 
 app.use(bodyParser.json())
 app.use(express.static(__dirname + '/client/build/'))
+app.use('/api/ideas', ideasController)
 app.get('/', (req,res) => {
   res.send('Hello world!')
 })
